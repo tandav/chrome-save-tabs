@@ -1,0 +1,14 @@
+{
+    "name": "BMark",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "browser_action": {},
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "manifest_version": 2
+}
