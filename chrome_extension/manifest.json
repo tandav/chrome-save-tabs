@@ -2,13 +2,18 @@
     "name": "BMark",
     "version": "1.0",
     "description": "Build an Extension!",
-    "browser_action": {},
     "background": {
-        "scripts": ["background.js"],
-        "persistent": false
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "/images/icons8-save-tabs-list-48.png",
+            "96": "/images/icons8-save-tabs-list-96.png"
+        }
     },
     "permissions": [
         "tabs"
     ],
-    "manifest_version": 2
+    "manifest_version": 3
 }
